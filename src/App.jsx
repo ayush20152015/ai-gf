@@ -1,14 +1,19 @@
 import './App.css'
-
+import { useRef } from 'react';
 
 
 
 
 function App() {
 
+   const audio = useRef(null);
 
   const goToProfile = () => {
     window.location.href="profile.html";
+  };
+
+  const playaudio = () =>{
+    window.location.href="aa gayi meri yaad ya.m4a";
   };
 
   return (
@@ -61,7 +66,7 @@ function App() {
           <div className="flex gap-3 justify-center sm:justify-start">
 
             <button className="px-5 py-2 rounded-lg bg-purple-600 
-            text-white font-semibold hover:bg-purple-700 transition">
+            text-white font-semibold hover:bg-purple-700 transition" button onClick={playaudio}>
 
               Message
 
